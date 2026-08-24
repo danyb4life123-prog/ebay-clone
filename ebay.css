@@ -1,0 +1,1565 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: #191919;
+    background: white;
+}
+
+
+
+/* =====================================================
+   TOP BAR
+===================================================== */
+
+/* =====================================================
+   TOP BAR
+===================================================== */
+
+.top-bar {
+    height: 35px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 5%;
+
+    font-size: 12px;
+
+    font-weight: 550;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* LEFT SIDE */
+
+.top-left {
+    display: flex;
+    align-items: center;
+
+    gap: 3px;
+}
+
+
+.top-left a {
+    color: #333;
+    text-decoration: none;
+}
+
+.top-left .sign {
+    color: #3665f3;
+    text-decoration: none;
+}
+
+
+.top-left a:hover {
+    text-decoration: underline;
+}
+
+
+/* RIGHT SIDE */
+
+.top-links {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+.top-links > a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+/* =====================================================
+   TOP DROPDOWNS
+===================================================== */
+
+.top-dropdown {
+    position: relative;
+}
+
+
+/* CLICKABLE TEXT */
+
+.top-dropdown summary {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    cursor: pointer;
+
+    list-style: none;
+
+    color: #333;
+}
+
+
+
+.top-dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+
+
+.top-arrow {
+    font-size: 15px;
+
+    line-height: 10px;
+
+    position: relative;
+    top: -1px;
+}
+
+
+/* DROPDOWN BOX */
+
+.top-dropdown-menu {
+
+    position: absolute;
+
+    top: 22px;
+    right: 0;
+
+    width: 180px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+
+    padding: 8px;
+
+    z-index: 9999;
+}
+
+
+/* DROPDOWN LINKS */
+
+.top-dropdown-menu a {
+
+    display: block;
+
+    padding: 9px 10px;
+
+    color: #333;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    font-size: 13px;
+}
+
+
+.top-dropdown-menu a:hover {
+
+    background: #f5f5f5;
+
+    text-decoration: none;
+}
+
+.top-mid {
+    margin-left: 25px;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header {
+
+    padding: 20px 5% 0;
+}
+
+
+.header-main {
+
+    display: flex;
+
+    align-items: center;
+
+    height: 60px;
+
+    gap: 20px;
+    
+}
+
+.search {
+    filter: brightness(0) saturate(100%) invert(50%);
+    width: 14px;
+    height: 14px;
+    margin-top: 13px;
+    margin-left: 12px;
+    
+    
+}
+
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo {
+
+    font-size: 45px;
+
+    font-weight: bold;
+
+    letter-spacing: -8px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.logo .e {
+    color: #e53238;
+}
+
+
+.logo .b {
+    color: #0064d2;
+}
+
+
+.logo .a {
+    color: #f5af02;
+}
+
+
+.logo .y {
+    color: #86b817;
+}
+
+
+
+/* =====================================================
+   CATEGORY DROPDOWN
+===================================================== */
+
+.category-dropdown {
+
+    position: relative;
+
+    display: inline-block;
+}
+
+
+.category-button {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 18px;
+
+    color: #555;
+
+    cursor: pointer;
+
+    list-style: none;
+}
+
+
+.category-button::-webkit-details-marker {
+
+    display: none;
+}
+
+
+.category-button .arrow {
+
+    font-size: 24px;
+
+    color: #111;
+}
+
+
+.dropdown-menu {
+
+    position: absolute;
+
+    top: 100%;
+
+    left: 0;
+
+    width: 250px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 15px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+
+    padding: 10px;
+
+    z-index: 1000;
+}
+
+
+.category-dropdown:not([open])
+.dropdown-menu {
+
+    display: none;
+}
+
+
+.dropdown-menu a {
+
+    display: block;
+
+    padding: 12px 15px;
+
+    color: #333;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    border-radius: 8px;
+}
+
+
+.dropdown-menu a:hover {
+
+    background: #f5f5f5;
+}
+
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.search-area {
+
+    display: flex;
+
+    flex: 1;
+
+    height: 44px;
+
+    border: 2px solid #191919;
+
+    border-radius: 50px;
+
+    overflow: hidden;
+}
+
+
+.search-area input {
+
+    flex: 1;
+
+    border: none;
+
+    padding: 0 20px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+.search-area select {
+
+    width: 180px;
+
+    border: none;
+
+    border-left: 1px solid #ddd;
+
+    padding: 0 10px;
+
+    background: white;
+
+    outline: none;
+}
+
+
+.search-button {
+
+    width: 160px;
+
+    height: 45px;
+
+    border-radius: 50px;
+
+    border: none;
+
+    background: #3665f3;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+.search-button:hover {
+
+    background: #2348c0;
+}
+
+
+.advanced {
+
+    font-size: 12px;
+    text-decoration: none;
+    color: #555;
+}
+
+
+
+/* =====================================================
+   CATEGORY NAVIGATION
+===================================================== */
+
+.category-nav {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    padding: 20px 0;
+}
+
+
+.category-nav a {
+
+    color: #333;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+
+.category-nav a:hover {
+
+    text-decoration: underline;
+}
+
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    width: 100%;
+    height: 320px;
+    background: #f7f7f7;
+}
+
+.hero .container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero .wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+/* =========================
+   HERO SLIDER
+========================= */
+
+.hero .wrapper-holder {
+    display: flex;
+
+    width: 500%;
+    height: 100%;
+
+    animation: heroSlider 15s ease-in-out infinite;
+}
+
+
+
+.hero-slide {
+    width: 20%;
+    height: 100%;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    background: #f7f7f7;
+
+    overflow: hidden;
+}
+
+
+
+
+.hero-text {
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+    
+}
+
+.hero-text h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.hero-text button {
+   padding: 8px 18px;
+    font-size: 14px;
+    width: fit-content;
+    border-radius: 50px;
+    border: none;
+    background: #191919;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hero-text-1 {
+    background-color: rgb(166, 53, 53);
+    
+}
+
+.hero-text-3 {
+    background-color: orange;
+}
+.hero-text-4 {
+    background-color: #0064d2;
+}
+
+
+
+
+.hero-image {
+    width: 55%;
+    height: 100%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    
+}
+
+
+
+
+.slide-1 .hero-image {
+    background-image: url("https://i.ebayimg.com/images/g/zkwAAeSwknpqTAe6/s-l960.webp");
+    background-color: rgb(166, 53, 53);
+}
+
+
+
+.slide-2 {
+    position: relative;
+}
+
+
+.slide-2 .hero-background {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url("https://i.ebayimg.com/images/g/siMAAeSwd3RoglNN/s-l1600.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: 1;
+}
+
+
+.slide-2 .background-text {
+    position: relative;
+    z-index: 3;
+
+    color: #191919;
+}
+
+
+
+
+.slide-3 .hero-image {
+    background-image: url("https://i.ebayimg.com/images/g/WPsAAeSwNzdog5r7/s-l960.webp");
+    background-color: orange;
+}
+
+
+
+.slide-4 .hero-image {
+    background-image: url("https://i.ebayimg.com/images/g/L1wAAeSw-7pqBewc/s-l960.webp");
+    background-color: #0064d2;
+}
+
+.copy-1 {
+    background-color: rgb(166, 53, 53);
+}
+
+
+
+
+@keyframes heroSlider {
+
+    /* SLIDE 1 */
+    0% {
+        transform: translateX(0);
+    }
+
+    18% {
+        transform: translateX(0);
+    }
+
+
+    /* SLIDE 2 */
+    22% {
+        transform: translateX(-20%);
+    }
+
+    38% {
+        transform: translateX(-20%);
+    }
+
+
+    /* SLIDE 3 */
+    42% {
+        transform: translateX(-40%);
+    }
+
+    58% {
+        transform: translateX(-40%);
+    }
+
+
+    /* SLIDE 4 */
+    62% {
+        transform: translateX(-60%);
+    }
+
+    78% {
+        transform: translateX(-60%);
+    }
+
+
+    /* SLIDE 5 = COPY OF SLIDE 1 */
+    82% {
+        transform: translateX(-80%);
+    }
+
+    100% {
+        transform: translateX(-80%);
+    }
+}
+/* =========================
+   HERO SLIDER CONTROLS
+========================= */
+
+.hero-controls {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 66px;
+
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 10;
+}
+
+
+/* =========================
+   DOTS
+========================= */
+
+.slide-dots {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dot {
+    width: 9px;
+    height: 9px;
+
+    border: 2px solid #111;
+    border-radius: 50%;
+    margin-top: 25px;
+    display: block;
+}
+
+.dot.active {
+    background: #111;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.slide-buttons {
+    position: absolute;
+
+    right: 48px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.slide-control {
+    width: 30px;
+    height: 29px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: white;
+    color: #191919;
+
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+
+/* PAUSE BUTTON */
+
+.slide-control.pause {
+    font-size: 18px;
+}
+
+
+/* HOVER */
+
+.slide-control:hover {
+    background: #eeeeee;
+}
+
+
+/* =====================================================
+   EBAY LIVE
+   EVERYTHING BELOW BELONGS ONLY TO EBAY LIVE
+===================================================== */
+
+.live-section {
+
+    margin: 35px 5% 45px;
+
+    position: relative;
+}
+
+
+.live-title {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+
+.live-title h2 {
+
+    font-size: 28px;
+
+    margin-bottom: 5px;
+}
+
+
+.live-title p {
+
+    color: #666;
+
+    font-size: 16px;
+}
+
+
+.live-title a {
+
+    color: black;
+
+    text-decoration: underline;
+
+    font-size: 14px;
+}
+
+
+
+
+
+/* =====================================================
+   LIVE CAROUSEL
+===================================================== */
+
+.live-carousel {
+
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+}
+
+
+/* Hide radio buttons */
+
+.live-carousel > input {
+
+    display: none;
+}
+
+
+/* Viewport */
+
+.live-viewport {
+
+    width: 100%;
+
+    overflow: hidden;
+}
+
+
+/* Four pages */
+
+.live-track {
+
+    display: flex;
+
+    width: 400%;
+
+    transition: transform 0.6s ease;
+}
+
+
+.live-page {
+
+    width: 25%;
+
+    flex-shrink: 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+
+
+/* =====================================================
+   LIVE CARD
+===================================================== */
+
+.live-card {
+
+    min-width: 0;
+
+    cursor: pointer;
+}
+
+
+.live-image {
+
+    position: relative;
+
+    height: 400px;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    background: #eee;
+}
+
+
+.live-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.3s ease;
+}
+
+
+.live-card:hover .live-image img {
+
+    transform: scale(1.04);
+}
+
+
+
+/* =====================================================
+   LIVE BADGE
+===================================================== */
+
+.live-badge {
+
+    position: absolute;
+
+    top: 12px;
+
+    left: 12px;
+
+    padding: 12px 17px;
+
+    background: #45df5d;
+
+    color: #111;
+
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    font-size: 15px;
+}
+
+
+
+/* =====================================================
+   LIVE CARD BOTTOM
+===================================================== */
+
+.live-bottom {
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    height: 55px;
+
+    padding: 10px 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    color: white;
+
+    font-weight: bold;
+
+    background: linear-gradient(
+        transparent,
+        rgba(0,0,0,0.75)
+    );
+}
+
+
+.live-bottom b {
+
+    width: 38px;
+
+    height: 38px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: rgba(0,0,0,0.55);
+
+    font-size: 15px;
+}
+
+
+.live-card > p {
+
+    font-size: 17px;
+
+    line-height: 1.4;
+
+    margin-top: 12px;
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: 2;
+
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+
+
+
+/* =====================================================
+   LIVE NAVIGATION ARROWS
+===================================================== */
+
+.live-arrow {
+
+    position: absolute;
+
+    top: 135px;
+
+    z-index: 20;
+
+    width: 45px;
+
+    height: 45px;
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: white;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+
+    font-size: 35px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    user-select: none;
+}
+
+
+.live-arrow:hover {
+
+    background: #f5f5f5;
+}
+
+
+.live-left {
+
+    left: 10px;
+}
+
+
+.live-right {
+
+    right: 10px;
+}
+
+
+
+/* Show arrows according to current page */
+
+#live-page-1:checked ~ .left-page-1,
+#live-page-1:checked ~ .right-page-1 {
+
+    display: flex;
+}
+
+
+#live-page-2:checked ~ .left-page-2,
+#live-page-2:checked ~ .right-page-2 {
+
+    display: flex;
+}
+
+
+#live-page-3:checked ~ .left-page-3,
+#live-page-3:checked ~ .right-page-3 {
+
+    display: flex;
+}
+
+
+#live-page-4:checked ~ .left-page-4,
+#live-page-4:checked ~ .right-page-4 {
+
+    display: flex;
+}
+
+
+
+/* =====================================================
+   MOVE LIVE SLIDER
+===================================================== */
+
+#live-page-1:checked
+~ .live-viewport .live-track {
+
+    transform: translateX(0);
+}
+
+
+#live-page-2:checked
+~ .live-viewport .live-track {
+
+    transform: translateX(-25%);
+}
+
+
+#live-page-3:checked
+~ .live-viewport .live-track {
+
+    transform: translateX(-50%);
+}
+
+
+#live-page-4:checked
+~ .live-viewport .live-track {
+
+    transform: translateX(-75%);
+}
+
+
+
+/* =====================================================
+   BOTTOM SLIDER
+===================================================== */
+
+/* Bottom slider - eBay style lines */
+
+.live-slider-controls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.live-slider-controls label {
+    width: 80px;
+    height: 3px;
+    background: #d9d9d9;
+    cursor: pointer;
+    border-radius: 0;   /* keeps it completely straight */
+}
+
+/* Active line */
+#live-page-1:checked ~ .live-slider-controls label:nth-child(1),
+#live-page-2:checked ~ .live-slider-controls label:nth-child(2),
+#live-page-3:checked ~ .live-slider-controls label:nth-child(3),
+#live-page-4:checked ~ .live-slider-controls label:nth-child(4) {
+    background: #191919;
+}
+
+.list {
+    position: relative;
+    background: #124579;
+    border-radius: 22px;
+    width: 90%;
+    padding: 35px;
+    min-height: 130px;
+    margin-left: 60px;
+    color: #d9eafa;
+}
+
+.list-h {
+    font-size: 33px;
+}
+
+.list button {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    padding: 8px 14px;
+    border: none;
+    border-radius: 20px;
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #0a457d;
+    background-color: #d9eafa;
+}
+
+/* =====================================================
+   PROMO
+===================================================== */
+
+.promo {
+
+    min-height: 350px;
+
+    padding: 50px;
+    background-color: #044f84;
+    display: flex;
+
+    align-items: center;
+}
+
+
+.promo h2 {
+
+    font-size: 30px;
+    color: rgb(218, 234, 253);
+
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+
+.promo p {
+
+    margin-bottom: 20px;
+
+    margin-left: 20px;
+
+    color: white;
+}
+
+
+.promo button {
+
+    padding: 12px 25px;
+
+    border: none;
+
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    margin-left: 20px;
+
+    background: #191919;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.promo-2 {
+    margin-bottom: 50px;
+    background-color: rgb(211, 36, 36);
+}
+
+.explore-2 {
+    color: rgb(192, 42, 42);
+}
+
+
+/* =====================================================
+   GENERAL SECTIONS
+===================================================== */
+
+.section {
+
+    margin: 50px 5%;
+}
+
+
+.section h2 {
+
+    font-size: 26px;
+
+    margin-bottom: 15px;
+}
+
+
+
+/* =====================================================
+   PRODUCTS
+===================================================== */
+
+.products {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.product {
+
+    cursor: pointer;
+}
+
+
+.product img {
+
+    width: 100%;
+
+    border-radius: 15px;
+
+    height: 300px;
+
+    object-fit: cover;
+}
+
+
+.product h3 {
+
+    font-size: 15px;
+
+    margin-top: 10px;
+}
+
+
+.product p {
+
+    margin-top: 5px;
+
+    color: #555;
+}
+
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    background: #f7f7f7;
+
+    margin-top: 60px;
+
+    padding: 50px 5% 20px;
+}
+
+
+.footer-columns {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 40px;
+}
+
+
+.footer-columns h3 {
+
+    margin-bottom: 15px;
+}
+
+
+.footer-columns a {
+
+    display: block;
+
+    color: #555;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    margin-bottom: 10px;
+}
+
+
+.footer-columns a:hover {
+
+    text-decoration: underline;
+}
+
+
+.copyright {
+
+    margin-top: 40px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #ddd;
+
+    font-size: 12px;
+
+    color: #666;
+}
+
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 800px) {
+
+
+    .top-links {
+
+        display: none;
+    }
+
+
+    .header-main {
+
+        flex-wrap: wrap;
+    }
+
+
+    .logo {
+
+        width: 100%;
+    }
+
+
+    .advanced {
+
+        display: none;
+    }
+
+
+    .search-area {
+
+        width: 100%;
+    }
+
+
+    .search-area select {
+
+        display: none;
+    }
+
+
+    .search-button {
+
+        width: 120px;
+    }
+
+
+    .category-nav {
+
+        overflow-x: auto;
+
+        justify-content: flex-start;
+    }
+
+
+    .hero {
+
+        height: 250px;
+    }
+
+
+    .hero-text {
+
+        padding: 20px;
+    }
+
+
+    .hero-text h1 {
+
+        font-size: 24px;
+    }
+
+
+    /* LIVE MOBILE */
+
+    .live-page {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 15px;
+    }
+
+
+    .live-image {
+
+        height: 220px;
+    }
+
+
+    .live-card > p {
+
+        font-size: 14px;
+    }
+
+
+    .live-title h2 {
+
+        font-size: 24px;
+    }
+
+
+    .products {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .footer-columns {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
