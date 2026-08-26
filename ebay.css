@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 
@@ -9,6 +10,7 @@ body {
     font-family: Arial, sans-serif;
     color: #191919;
     background: white;
+    max-width: fit-content;
 }
 
 
@@ -566,6 +568,10 @@ header {
     background-repeat: no-repeat;
 
     
+}
+
+.img-2 {
+    color: white;
 }
 
 
@@ -1393,8 +1399,19 @@ footer {
 
 
 
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+}
+@media (max-width: 1200px) {
 
-@media (max-width: 800px) {
+    .container {
+        width: 100%;
+        max-width: none;
+        padding: 0 10px;
+    }
 
 
     .top-links {
