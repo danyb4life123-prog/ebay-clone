@@ -13,13 +13,7 @@ body {
 
 
 
-/* =====================================================
-   TOP BAR
-===================================================== */
 
-/* =====================================================
-   TOP BAR
-===================================================== */
 
 .top-bar {
     height: 35px;
@@ -38,7 +32,7 @@ body {
 }
 
 
-/* LEFT SIDE */
+
 
 .top-left {
     display: flex;
@@ -64,7 +58,6 @@ body {
 }
 
 
-/* RIGHT SIDE */
 
 .top-links {
     display: flex;
@@ -80,16 +73,13 @@ body {
 }
 
 
-/* =====================================================
-   TOP DROPDOWNS
-===================================================== */
+
 
 .top-dropdown {
     position: relative;
 }
 
 
-/* CLICKABLE TEXT */
 
 .top-dropdown summary {
     display: flex;
@@ -123,7 +113,6 @@ body {
 }
 
 
-/* DROPDOWN BOX */
 
 .top-dropdown-menu {
 
@@ -148,7 +137,6 @@ body {
 }
 
 
-/* DROPDOWN LINKS */
 
 .top-dropdown-menu a {
 
@@ -177,9 +165,7 @@ body {
     margin-left: 25px;
 }
 
-/* =====================================================
-   HEADER
-===================================================== */
+
 
 header {
 
@@ -196,6 +182,7 @@ header {
     height: 60px;
 
     gap: 20px;
+
     
 }
 
@@ -211,9 +198,7 @@ header {
 
 
 
-/* =====================================================
-   LOGO
-===================================================== */
+
 
 .logo {
 
@@ -248,9 +233,7 @@ header {
 
 
 
-/* =====================================================
-   CATEGORY DROPDOWN
-===================================================== */
+
 
 .category-dropdown {
 
@@ -350,9 +333,7 @@ header {
 
 
 
-/* =====================================================
-   SEARCH
-===================================================== */
+
 
 .search-area {
 
@@ -437,9 +418,7 @@ header {
 
 
 
-/* =====================================================
-   CATEGORY NAVIGATION
-===================================================== */
+
 
 .category-nav {
 
@@ -470,13 +449,7 @@ header {
 
 
 
-/* =====================================================
-   HERO
-===================================================== */
 
-/* =========================
-   HERO
-========================= */
 
 .hero {
     width: 100%;
@@ -660,7 +633,6 @@ header {
 
 @keyframes heroSlider {
 
-    /* SLIDE 1 */
     0% {
         transform: translateX(0);
     }
@@ -670,7 +642,6 @@ header {
     }
 
 
-    /* SLIDE 2 */
     22% {
         transform: translateX(-20%);
     }
@@ -680,7 +651,6 @@ header {
     }
 
 
-    /* SLIDE 3 */
     42% {
         transform: translateX(-40%);
     }
@@ -690,7 +660,6 @@ header {
     }
 
 
-    /* SLIDE 4 */
     62% {
         transform: translateX(-60%);
     }
@@ -700,7 +669,6 @@ header {
     }
 
 
-    /* SLIDE 5 = COPY OF SLIDE 1 */
     82% {
         transform: translateX(-80%);
     }
@@ -709,9 +677,7 @@ header {
         transform: translateX(-80%);
     }
 }
-/* =========================
-   HERO SLIDER CONTROLS
-========================= */
+
 
 .hero-controls {
     position: absolute;
@@ -732,9 +698,7 @@ header {
 }
 
 
-/* =========================
-   DOTS
-========================= */
+
 
 .slide-dots {
     display: flex;
@@ -757,9 +721,7 @@ header {
 }
 
 
-/* =========================
-   BUTTONS
-========================= */
+
 
 .slide-buttons {
     position: absolute;
@@ -793,24 +755,19 @@ header {
 }
 
 
-/* PAUSE BUTTON */
 
 .slide-control.pause {
     font-size: 18px;
 }
 
 
-/* HOVER */
 
 .slide-control:hover {
     background: #eeeeee;
 }
 
 
-/* =====================================================
-   EBAY LIVE
-   EVERYTHING BELOW BELONGS ONLY TO EBAY LIVE
-===================================================== */
+
 
 .live-section {
 
@@ -861,9 +818,7 @@ header {
 
 
 
-/* =====================================================
-   LIVE CAROUSEL
-===================================================== */
+
 
 .live-carousel {
 
@@ -875,7 +830,6 @@ header {
 }
 
 
-/* Hide radio buttons */
 
 .live-carousel > input {
 
@@ -883,7 +837,6 @@ header {
 }
 
 
-/* Viewport */
 
 .live-viewport {
 
@@ -893,7 +846,6 @@ header {
 }
 
 
-/* Four pages */
 
 .live-track {
 
@@ -920,9 +872,7 @@ header {
 
 
 
-/* =====================================================
-   LIVE CARD
-===================================================== */
+
 
 .live-card {
 
@@ -967,9 +917,7 @@ header {
 
 
 
-/* =====================================================
-   LIVE BADGE
-===================================================== */
+
 
 .live-badge {
 
@@ -994,9 +942,7 @@ header {
 
 
 
-/* =====================================================
-   LIVE CARD BOTTOM
-===================================================== */
+
 
 .live-bottom {
 
@@ -1068,9 +1014,7 @@ header {
 
 
 
-/* =====================================================
-   LIVE NAVIGATION ARROWS
-===================================================== */
+
 
 .live-arrow {
 
@@ -1125,7 +1069,6 @@ header {
 
 
 
-/* Show arrows according to current page */
 
 #live-page-1:checked ~ .left-page-1,
 #live-page-1:checked ~ .right-page-1 {
@@ -1156,9 +1099,7 @@ header {
 
 
 
-/* =====================================================
-   MOVE LIVE SLIDER
-===================================================== */
+
 
 #live-page-1:checked
 ~ .live-viewport .live-track {
@@ -1189,11 +1130,7 @@ header {
 
 
 
-/* =====================================================
-   BOTTOM SLIDER
-===================================================== */
 
-/* Bottom slider - eBay style lines */
 
 .live-slider-controls {
     width: 100%;
@@ -1207,10 +1144,9 @@ header {
     height: 3px;
     background: #d9d9d9;
     cursor: pointer;
-    border-radius: 0;   /* keeps it completely straight */
+    border-radius: 0;   
 }
 
-/* Active line */
 #live-page-1:checked ~ .live-slider-controls label:nth-child(1),
 #live-page-2:checked ~ .live-slider-controls label:nth-child(2),
 #live-page-3:checked ~ .live-slider-controls label:nth-child(3),
@@ -1250,9 +1186,7 @@ header {
     background-color: #d9eafa;
 }
 
-/* =====================================================
-   PROMO
-===================================================== */
+
 
 .promo {
 
@@ -1298,9 +1232,9 @@ header {
 
     margin-left: 20px;
 
-    background: #191919;
+    background: white;
 
-    color: white;
+    color:  black;
 
     cursor: pointer;
 }
@@ -1311,13 +1245,21 @@ header {
 }
 
 .explore-2 {
-    color: rgb(192, 42, 42);
+color: red;
 }
 
 
-/* =====================================================
-   GENERAL SECTIONS
-===================================================== */
+.icon {
+    height: 20px;
+    margin-top: 10px;
+}
+
+.icon-2 {
+    height: 20px;
+    margin-top: 15px;
+}
+
+
 
 .section {
 
@@ -1334,9 +1276,7 @@ header {
 
 
 
-/* =====================================================
-   PRODUCTS
-===================================================== */
+
 
 .products {
 
@@ -1383,9 +1323,7 @@ header {
 
 
 
-/* =====================================================
-   FOOTER
-===================================================== */
+
 
 footer {
 
@@ -1448,9 +1386,7 @@ footer {
 
 
 
-/* =====================================================
-   MOBILE
-===================================================== */
+
 
 @media (max-width: 800px) {
 
@@ -1523,7 +1459,6 @@ footer {
     }
 
 
-    /* LIVE MOBILE */
 
     .live-page {
 
