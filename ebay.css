@@ -1252,11 +1252,17 @@ color: red;
 .icon {
     height: 20px;
     margin-top: 10px;
+    position: relative;
+    left: -2px;
+    top: 3px;
 }
 
 .icon-2 {
     height: 20px;
     margin-top: 15px;
+     position: relative;
+    left: -2px;
+    top: 3px;
 }
 
 
