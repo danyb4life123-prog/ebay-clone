@@ -445,111 +445,102 @@ header {
 
 
 
+/* =========================
+   HERO
+========================= */
+
 .hero {
     width: 100%;
-    height: 320px;
-    background: #f7f7f7;
+    margin-top: 10px;
 }
 
-.hero .container {
-    width: 100%;
-    height: 100%;
+.container {
     position: relative;
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
     overflow: hidden;
 }
 
-.hero .wrapper {
+.wrapper {
     width: 100%;
-    height: 100%;
+    overflow: hidden;
+}
+
+.wrapper-holder {
+    display: flex;
+    width: 100%;
+    transition: transform 0.6s ease;
+}
+
+.hero-slide {
+    position: relative;
+
+    min-width: 100%;
+    width: 100%;
+
+    height: 320px;
+
+    display: flex;
+    align-items: stretch;
+
     overflow: hidden;
 }
 
 
 /* =========================
-   HERO SLIDER
+   HERO TEXT
 ========================= */
 
-.hero .wrapper-holder {
-    display: flex;
-
-    width: 500%;
-    height: 100%;
-
-    animation: heroSlider 15s ease-in-out infinite;
-}
-
-
-
-.hero-slide {
-    width: 20%;
-    height: 100%;
-
-    flex-shrink: 0;
-
-    display: flex;
-    align-items: center;
-
-    position: relative;
-
-    background: #f7f7f7;
-
-    overflow: hidden;
-}
-
-
-
-
 .hero-text {
-    width: 50%;
-    height: 100%;
-    padding: 40px;
-    
+    width: 45%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    
-    
+    padding: clamp(25px, 5vw, 60px);
+
+    z-index: 2;
 }
 
 .hero-text h1 {
-    font-size: 32px;
+    font-size: clamp(24px, 3vw, 38px);
     margin-bottom: 15px;
 }
 
 .hero-text p {
-    font-size: 16px;
+    max-width: 500px;
+
+    font-size: clamp(14px, 1.5vw, 17px);
+
     line-height: 1.5;
-    color: black;
+
     margin-bottom: 20px;
+
+    color: #555;
 }
 
 .hero-text button {
-   padding: 8px 18px;
-    font-size: 14px;
     width: fit-content;
-    border-radius: 50px;
+
+    padding: 10px 20px;
+
     border: none;
+    border-radius: 20px;
+
     background: #191919;
     color: white;
-    cursor: pointer;
+
     font-weight: bold;
-}
 
-.hero-text-1 {
-    background-color: rgb(166, 53, 53);
-    
-}
-
-.hero-text-3 {
-    background-color: orange;
-}
-.hero-text-4 {
-    background-color: #0064d2;
+    cursor: pointer;
 }
 
 
-
+/* =========================
+   HERO IMAGE
+========================= */
 
 .hero-image {
     width: 55%;
@@ -558,76 +549,157 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    
 }
 
-.img-2 {
+
+/* =========================
+   SLIDE 1
+========================= */
+
+.slide-1 {
+    background: rgb(174, 51, 51);
     color: white;
 }
 
-
-
-
 .slide-1 .hero-image {
-    background-image: url("https://i.ebayimg.com/images/g/zkwAAeSwknpqTAe6/s-l960.webp");
-    background-color: rgb(166, 53, 53);
+    background-image:
+        url("https://i.ebayimg.com/images/g/zkwAAeSwknpqTAe6/s-l960.webp");
 }
 
 
+/* =========================
+   SLIDE 2
+========================= */
 
 .slide-2 {
-    position: relative;
-}
-
-
-.slide-2 .hero-background {
-    position: absolute;
-
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    background-image: url("https://i.ebayimg.com/images/g/siMAAeSwd3RoglNN/s-l1600.webp");
+    background-image:
+        url("https://i.ebayimg.com/images/g/siMAAeSwd3RoglNN/s-l1600.webp");
 
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-
-    z-index: 1;
 }
 
+.slide-2::before {
+    content: "";
 
-.slide-2 .background-text {
+    position: absolute;
+
+    inset: 0;
+
+}
+
+.slide-2 .hero-text {
     position: relative;
-    z-index: 3;
+    z-index: 2;
 
-    color: #191919;
+    width: 50%;
 }
 
 
+/* =========================
+   SLIDE 3
+========================= */
 
+.slide-3 {
+    background: orange;
+}
 
 .slide-3 .hero-image {
-    background-image: url("https://i.ebayimg.com/images/g/WPsAAeSwNzdog5r7/s-l960.webp");
-    background-color: orange;
+    background-image:
+        url("https://i.ebayimg.com/images/g/WPsAAeSwNzdog5r7/s-l960.webp");
 }
 
 
+/* =========================
+   SLIDE 4
+========================= */
+
+.slide-4 {
+    background: blue;
+}
 
 .slide-4 .hero-image {
-    background-image: url("https://i.ebayimg.com/images/g/L1wAAeSw-7pqBewc/s-l960.webp");
-    background-color: #0064d2;
-}
-
-.copy-1 {
-    background-color: rgb(166, 53, 53);
+    background-image:
+        url("https://i.ebayimg.com/images/g/L1wAAeSw-7pqBewc/s-l960.webp");
 }
 
 
+/* =========================
+   HERO CONTROLS
+========================= */
 
+.hero-controls {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 clamp(15px, 3vw, 40px);
+
+    z-index: 10;
+}
+
+
+/* DOTS */
+
+.slide-dots {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 9px;
+    height: 9px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #aaa;
+
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #191919;
+
+    transform: scale(1.25);
+}
+
+
+/* BUTTONS */
+
+.slide-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.slide-control {
+    width: 38px;
+    height: 38px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 50%;
+
+    background: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.slide-control:hover {
+    background: #f0f0f0;
+}
 
 @keyframes heroSlider {
 
@@ -1280,7 +1352,26 @@ color: red;
 
 
 
+.add-cart {
+    margin-top: 10px;
 
+    padding: 9px 16px;
+
+    border: 1px solid #191919;
+
+    border-radius: 20px;
+
+    background: white;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.add-cart:hover {
+    background: #191919;
+    color: white;
+}
 
 .products {
 
@@ -1392,14 +1483,58 @@ footer {
 
 
 
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 1100px) {
+
+    .header-main {
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 40px;
+    }
+
+    .category-button {
+        font-size: 15px;
+    }
+
+    .search-button {
+        width: 120px;
+    }
+
+    .advanced {
+        display: none;
+    }
+
+    .category-nav {
+        gap: 18px;
+        overflow-x: auto;
+        justify-content: flex-start;
+        white-space: nowrap;
+    }
+
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
 @media (max-width: 800px) {
 
     .top-bar {
         padding: 0 15px;
     }
 
-    .top-links {
+    .top-mid {
         display: none;
+    }
+
+    .top-links {
+        gap: 10px;
     }
 
     header {
@@ -1408,16 +1543,10 @@ footer {
 
     .header-main {
         flex-wrap: wrap;
-        gap: 12px;
     }
 
     .logo {
         width: 100%;
-        font-size: 40px;
-    }
-
-    .advanced {
-        display: none;
     }
 
     .category-dropdown {
@@ -1425,8 +1554,8 @@ footer {
     }
 
     .search-area {
-        width: 100%;
         flex: 1;
+        min-width: 0;
     }
 
     .search-area select {
@@ -1435,34 +1564,211 @@ footer {
 
     .search-button {
         width: 100px;
-        flex-shrink: 0;
     }
 
-    .category-nav {
-        width: 100%;
-        overflow-x: auto;
-        justify-content: flex-start;
-        padding: 15px 0;
-        gap: 20px;
-        white-space: nowrap;
+    .hero-slide {
+        height: 280px;
     }
 
-    .hero {
-        height: 250px;
+    .hero-text {
+        width: 50%;
+        padding: 25px;
     }
 
-    .section,
-    .live-section {
-        width: calc(100% - 30px);
-        margin: 35px auto;
+    .hero-image {
+        width: 50%;
     }
 
     .products {
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
     }
 
     .footer-columns {
         grid-template-columns: repeat(2, 1fr);
     }
+
+}
+
+
+/* =========================
+   PHONE
+========================= */
+
+@media (max-width: 600px) {
+
+    .top-bar {
+        height: auto;
+
+        min-height: 35px;
+
+        font-size: 11px;
+    }
+
+    .top-links {
+        gap: 6px;
+    }
+
+    .top-dropdown summary {
+        font-size: 11px;
+    }
+
+    .icons img {
+        width: 18px;
+        height: 18px;
+    }
+
+
+    header {
+        padding: 10px;
+    }
+
+
+    .logo {
+        font-size: 38px;
+    }
+
+
+    .header-main {
+        gap: 8px;
+    }
+
+
+    .search-area {
+        height: 40px;
+    }
+
+
+    .search-area input {
+        font-size: 13px;
+        padding: 0 10px;
+    }
+
+
+    .search-button {
+        width: 80px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+
+    .category-nav {
+        padding: 12px 0;
+        gap: 20px;
+    }
+
+
+    .hero-slide {
+        height: 240px;
+    }
+
+
+    .hero-text {
+        width: 55%;
+        padding: 18px;
+    }
+
+
+    .hero-text h1 {
+        font-size: 22px;
+    }
+
+
+    .hero-text p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+
+    .hero-text button {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+
+
+    .hero-image {
+        width: 45%;
+    }
+
+
+    .hero-controls {
+        bottom: 8px;
+        padding: 0 10px;
+    }
+
+
+    .slide-control {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+
+    .dot {
+        width: 7px;
+        height: 7px;
+    }
+
+
+    .products {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+
+    .product img {
+        height: 140px;
+    }
+
+
+    .footer-columns {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+}
+
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+
+@media (max-width: 400px) {
+
+    .top-links .top-dropdown:nth-child(2),
+    .top-links .top-dropdown:nth-child(3) {
+        display: none;
+    }
+
+
+    .hero-slide {
+        height: 220px;
+    }
+
+
+    .hero-text {
+        width: 60%;
+        padding: 15px;
+    }
+
+
+    .hero-image {
+        width: 40%;
+    }
+
+
+    .hero-text h1 {
+        font-size: 19px;
+    }
+
+
+    .hero-text p {
+        font-size: 11px;
+    }
+
+
+    .search-button {
+        width: 65px;
+        font-size: 11px;
+    }
+
 }

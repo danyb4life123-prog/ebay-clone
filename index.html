@@ -9,7 +9,6 @@
 
     <link rel="stylesheet" href="ebay.css">
 </head>
-
 <body>
 
 
@@ -105,9 +104,14 @@
         </a>
 
 
-        <a href="#" class="icons">
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNob3BwaW5nLWNhcnQtaWNvbiBsdWNpZGUtc2hvcHBpbmctY2FydCI+PGNpcmNsZSBjeD0iOCIgY3k9IjIxIiByPSIxIi8+PGNpcmNsZSBjeD0iMTkiIGN5PSIyMSIgcj0iMSIvPjxwYXRoIGQ9Ik0yLjA1IDIuMDVoMmwyLjY2IDEyLjQyYTIgMiAwIDAgMCAyIDEuNThoOS43OGEyIDIgMCAwIDAgMS45NS0xLjU3bDEuNjUtNy40M0g1LjEyIi8+PC9zdmc+" alt="">
-        </a>
+        <a href="cart.html" class="icons">
+
+    <img
+        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvcjoiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIiPjwvc3ZnPg=="
+        alt="Cart"
+    >
+
+</a>
 
     </div>
 
@@ -246,12 +250,12 @@
 
             <div class="wrapper-holder">
 
-            
-
+                <!-- SLIDE 1 -->
                 <div class="hero-slide slide-1">
 
-                    <div class="hero-text hero-text-1">
+                    <div class="hero-text">
                         <h1>Find what you love</h1>
+
                         <p>
                             Discover great deals and unique items
                             from sellers around the world.
@@ -265,14 +269,13 @@
                 </div>
 
 
+                <!-- SLIDE 2 -->
                 <div class="hero-slide slide-2">
 
-                    <div class="hero-background"></div>
+                    <div class="hero-text">
+                        <h1>Great deals are waiting</h1>
 
-                    <div class="hero-text background-text">
-                        <h1 class="img-2">Great deals are waiting</h1>
-
-                        <p  class="img-2">
+                        <p>
                             Shop amazing products at prices
                             you'll love.
                         </p>
@@ -283,12 +286,13 @@
                 </div>
 
 
+                <!-- SLIDE 3 -->
                 <div class="hero-slide slide-3">
 
-                    <div class="hero-text hero-text-3">
-                        <h1 class="img">Discover something new</h1>
+                    <div class="hero-text">
+                        <h1>Discover something new</h1>
 
-                        <p class="img">
+                        <p>
                             Find trending products and
                             unexpected treasures.
                         </p>
@@ -301,9 +305,10 @@
                 </div>
 
 
+                <!-- SLIDE 4 -->
                 <div class="hero-slide slide-4">
 
-                    <div class="hero-text hero-text-4">
+                    <div class="hero-text">
                         <h1>Shop your favorite brands</h1>
 
                         <p>
@@ -318,51 +323,51 @@
 
                 </div>
 
+            </div>
 
-                <div class="hero-slide slide-1">
+        </div>
 
-                    <div class="hero-text copy-1">
-                        <h1>Find what you love</h1>
 
-                        <p>
-                            Discover great deals and unique items
-                            from sellers around the world.
-                        </p>
+        <!-- HERO CONTROLS -->
 
-                        <button>Shop now</button>
-                    </div>
+        <div class="hero-controls">
 
-                    <div class="hero-image"></div>
+            <div class="slide-dots">
 
-                </div>
+                <button class="dot active" data-slide="0"></button>
+
+                <button class="dot" data-slide="1"></button>
+
+                <button class="dot" data-slide="2"></button>
+
+                <button class="dot" data-slide="3"></button>
 
             </div>
 
-<div class="hero-controls">
 
-    <!-- SLIDE DOTS -->
-    <div class="slide-dots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
+            <div class="slide-buttons">
 
-    <div class="slide-buttons">
+                <button id="hero-prev" class="slide-control">
+                    &#10094;
+                </button>
 
-        <button class="slide-control">
-            &#10094;
-        </button>
+                <button id="hero-next" class="slide-control">
+                    &#10095;
+                </button>
 
-        <button class="slide-control">
-            &#10095;
-        </button>
+                <button id="hero-pause" class="slide-control pause">
+                    ❚❚
+                </button>
 
-        <button class="slide-control pause">
-            &#10074;&#10074;
-        </button>
+            </div>
+
+        </div>
 
     </div>
+
+</section>
+
+
 
 </div>
 
@@ -1070,84 +1075,87 @@
     </h2>
 
 
-    <div class="products">
+    <div class="product"
+     data-name="Laptop"
+     data-price="500">
 
+    <img
+        src="https://images.unsplash.com/photo-1542393545-10f5cde2c810?q=80&w=765&auto=format&fit=crop"
+        alt="Laptop"
+    >
 
-        <div class="product">
+    <h3>Laptops</h3>
 
-            <img
-                src="https://images.unsplash.com/photo-1542393545-10f5cde2c810?q=80&w=765&auto=format&fit=crop"
-                alt="Laptops"
-            >
+    <p>Save up to 50%</p>
 
-            <h3>
-                Laptops
-            </h3>
+    <button class="add-cart">
+        Add to cart
+    </button>
 
-            <p>
-                Save up to 50%
-            </p>
-
-        </div>
-
-
-
-        <div class="product">
-
-            <img
-                src="https://images.unsplash.com/photo-1622560480654-d96214fdc887?q=80&w=688&auto=format&fit=crop"
-                alt="Backpacks"
-            >
-
-            <h3>
-                Backpacks
-            </h3>
-
-            <p>
-                Save up to 40%
-            </p>
-
-        </div>
+</div>
 
 
 
-        <div class="product">
+        <div class="product"
+     data-name="Backpack"
+     data-price="40">
 
-            <img
-                src="https://plus.unsplash.com/premium_photo-1663127374925-56558b81cd38?q=80&w=1170&auto=format&fit=crop"
-                alt="School Supplies"
-            >
+    <img
+        src="https://images.unsplash.com/photo-1622560480654-d96214fdc887?q=80&w=688&auto=format&fit=crop"
+        alt="Backpack"
+    >
 
-            <h3>
-                School Supplies
-            </h3>
+    <h3>Backpacks</h3>
 
-            <p>
-                Great deals
-            </p>
+    <p>Save up to 40%</p>
 
-        </div>
+    <button class="add-cart">
+        Add to cart
+    </button>
+
+</div>
 
 
 
-        <div class="product">
+        <div class="product"
+     data-name="School Supplies"
+     data-price="25">
 
-            <img
-                src="https://plus.unsplash.com/premium_photo-1679513691474-73102089c117?q=80&w=1113&auto=format&fit=crop"
-                alt="Headphones"
-            >
+    <img
+        src="https://plus.unsplash.com/premium_photo-1663127374925-56558b81cd38?q=80&w=1170&auto=format&fit=crop"
+        alt="School Supplies"
+    >
 
-            <h3>
-                Headphones
-            </h3>
+    <h3>School Supplies</h3>
 
-            <p>
-                Save up to 30%
-            </p>
+    <p>Great deals</p>
 
-        </div>
+    <button class="add-cart">
+        Add to cart
+    </button>
 
-    </div>
+</div>
+
+
+
+        <div class="product"
+     data-name="Headphones"
+     data-price="80">
+
+    <img
+        src="https://plus.unsplash.com/premium_photo-1679513691474-73102089c117?q=80&w=1113&auto=format&fit=crop"
+        alt="Headphones"
+    >
+
+    <h3>Headphones</h3>
+
+    <p>Save up to 30%</p>
+
+    <button class="add-cart">
+        Add to cart
+    </button>
+
+</div>
 
 </section>
 
@@ -1269,6 +1277,7 @@
 
 </footer>
 
+<script src="script.js"></script>
 
 </body>
 </html>
