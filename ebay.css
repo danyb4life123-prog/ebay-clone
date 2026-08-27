@@ -518,7 +518,7 @@ header {
 
     margin-bottom: 20px;
 
-    color: #555;
+    color: white;
 }
 
 .hero-text button {
@@ -577,6 +577,7 @@ header {
 
     background-size: cover;
     background-position: center;
+    color: rgb(255, 255, 255);
 }
 
 .slide-2::before {
@@ -609,7 +610,9 @@ header {
         url("https://i.ebayimg.com/images/g/WPsAAeSwNzdog5r7/s-l960.webp");
 }
 
-
+.slide-3 .hero-text {
+    color: black;
+}
 /* =========================
    SLIDE 4
 ========================= */
@@ -623,7 +626,9 @@ header {
         url("https://i.ebayimg.com/images/g/L1wAAeSw-7pqBewc/s-l960.webp");
 }
 
-
+.slide-4 .hero-text {
+    color: white;
+}
 /* =========================
    HERO CONTROLS
 ========================= */
@@ -1337,9 +1342,10 @@ color: red;
 
 
 .section {
-    width: 90%;
-    max-width: 1400px;
-    margin: 50px auto;
+   display: flex;
+   gap: 50px;
+   
+
 }
 
 
@@ -1347,7 +1353,7 @@ color: red;
 
     font-size: 26px;
 
-    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 
@@ -1391,11 +1397,11 @@ color: red;
 
 .product img {
 
-    width: 100%;
+    
 
     border-radius: 15px;
 
-    height: 300px;
+    height: 180px;
 
     object-fit: cover;
 }
