@@ -197,13 +197,15 @@ header {
 
 .logo {
 
-    font-size: 45px;
+    font-size: 55px;
 
     font-weight: bold;
 
-    letter-spacing: -8px;
+    letter-spacing: -10px;
 
     font-family: Arial, Helvetica, sans-serif;
+
+    margin-bottom: 10px;
 }
 
 
@@ -250,13 +252,14 @@ header {
 
     font-family: Arial, Helvetica, sans-serif;
 
-    font-size: 18px;
+    font-size: 13px;
 
     color: #555;
 
     cursor: pointer;
 
     list-style: none;
+    
 }
 
 
@@ -268,7 +271,9 @@ header {
 
 .category-button .arrow {
 
-    font-size: 24px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-left: -10px;
 
     color: #111;
 }
@@ -445,9 +450,7 @@ header {
 
 
 
-/* =========================
-   HERO
-========================= */
+
 
 .hero {
     width: 100%;
@@ -488,9 +491,7 @@ header {
 }
 
 
-/* =========================
-   HERO TEXT
-========================= */
+
 
 .hero-text {
     width: 45%;
@@ -538,9 +539,7 @@ header {
 }
 
 
-/* =========================
-   HERO IMAGE
-========================= */
+
 
 .hero-image {
     width: 55%;
@@ -552,9 +551,7 @@ header {
 }
 
 
-/* =========================
-   SLIDE 1
-========================= */
+
 
 .slide-1 {
     background: rgb(174, 51, 51);
@@ -567,9 +564,7 @@ header {
 }
 
 
-/* =========================
-   SLIDE 2
-========================= */
+
 
 .slide-2 {
     background-image:
@@ -597,9 +592,7 @@ header {
 }
 
 
-/* =========================
-   SLIDE 3
-========================= */
+
 
 .slide-3 {
     background: orange;
@@ -629,9 +622,7 @@ header {
 .slide-4 .hero-text {
     color: white;
 }
-/* =========================
-   HERO CONTROLS
-========================= */
+
 
 .hero-controls {
     position: absolute;
@@ -651,7 +642,6 @@ header {
 }
 
 
-/* DOTS */
 
 .slide-dots {
     display: flex;
@@ -668,7 +658,6 @@ header {
 
     border-radius: 50%;
 
-    background: #aaa;
 
     cursor: pointer;
 }
@@ -680,7 +669,6 @@ header {
 }
 
 
-/* BUTTONS */
 
 .slide-buttons {
     display: flex;
@@ -779,6 +767,7 @@ header {
     display: flex;
     align-items: center;
     gap: 5px;
+    
 }
 
 .dot {
@@ -789,10 +778,11 @@ header {
     border-radius: 50%;
     margin-top: 25px;
     display: block;
+    background: none;
 }
 
 .dot.active {
-    background: #111;
+    background: none;
 }
 
 
